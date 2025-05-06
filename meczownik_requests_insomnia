@@ -1,0 +1,237 @@
+type: collection.insomnia.rest/5.0
+name: Meczownik
+meta:
+  id: wrk_43864f2e0ea44925a2118e6bd17f58c1
+  created: 1746547766209
+  modified: 1746547766209
+collection:
+  - name: GET ALL
+    meta:
+      id: fld_a9f7c3628bb54cf69955b16f34fc498a
+      created: 1746554902096
+      modified: 1746555624832
+      sortKey: -1746554902096
+    children:
+      - url: "{{ _.local.base_url }}/country"
+        name: Get all country
+        meta:
+          id: req_c59bf1856fa149f8b3698fec3b234b34
+          created: 1746554905235
+          modified: 1746555511765
+          isPrivate: false
+          sortKey: -1746555427706
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/match"
+        name: Get all match
+        meta:
+          id: req_4336585ae6154fab9d7003d19b320b9f
+          created: 1746555457629
+          modified: 1746555517178
+          isPrivate: false
+          sortKey: -1746555457629
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/player"
+        name: Get all player
+        meta:
+          id: req_b81b378cdd224eb492b190bf752145c8
+          created: 1746555459335
+          modified: 1746555541899
+          isPrivate: false
+          sortKey: -1746555459335
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/stadium"
+        name: Get all stadium
+        meta:
+          id: req_8d33da5f96724888a8ecd943edc8f284
+          created: 1746555460343
+          modified: 1746555545840
+          isPrivate: false
+          sortKey: -1746555460343
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/team"
+        name: Get all team
+        meta:
+          id: req_1c39ce8f747b45e8a649c5345be78a7b
+          created: 1746555461101
+          modified: 1746555550960
+          isPrivate: false
+          sortKey: -1746555461101
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: GET SINGLE
+    meta:
+      id: fld_55a251b7b0c4471db08a08b8d66c89fe
+      created: 1746555491106
+      modified: 1746555622838
+      sortKey: -1746555491106
+    children:
+      - url: "{{ _.local.base_url }}/team/1"
+        name: Get single team
+        meta:
+          id: req_b332ef6198544e759cc560db48477159
+          created: 1746555570298
+          modified: 1746555633595
+          isPrivate: false
+          sortKey: -1746555603238
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/stadium/1"
+        name: Get single stadium
+        meta:
+          id: req_8ba4bc4c35a24fdcb8ecf1f55a17dad0
+          created: 1746555580302
+          modified: 1746555637761
+          isPrivate: false
+          sortKey: -1746555603438
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/player/1"
+        name: Get single player
+        meta:
+          id: req_f37841ea245e4ba0aed1c44179a5fd29
+          created: 1746555588789
+          modified: 1746555635680
+          isPrivate: false
+          sortKey: -1746555603338
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/match/1"
+        name: Get single match
+        meta:
+          id: req_47be194909c9446696992a7d9e3f85aa
+          created: 1746555600641
+          modified: 1746555628398
+          isPrivate: false
+          sortKey: -1746555603038
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.local.base_url }}/country/1"
+        name: Get single country
+        meta:
+          id: req_c8ea483d011b48f1abccc194f1e9911c
+          created: 1746555610037
+          modified: 1746556393257
+          isPrivate: false
+          sortKey: -1746555603138
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_0ec51081ebf499be906ab537ae25b702cc7d1583
+    created: 1746547766212
+    modified: 1746547766212
+environments:
+  name: Base Environment
+  meta:
+    id: env_0ec51081ebf499be906ab537ae25b702cc7d1583
+    created: 1746547766210
+    modified: 1746556400839
+    isPrivate: false
+  data:
+    local:
+      base_url: https://127.0.0.1:8000

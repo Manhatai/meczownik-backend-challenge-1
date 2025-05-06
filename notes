@@ -1,0 +1,20 @@
+Jak zrobić migrację manualnie lokalnie?
+0.1. Uruchomić dostarczony venv lub utworzyć nowy z pomocą requirements.txt
+0.2. W PSQL stworzyć nową bazę danych i jej nazwę uzupełnić w .env
+0.3. Upewnić się, że w .env znajdują się poprawne wartości
+1. alembic revision --autogenerate -m "Second migration"
+2. alembic upgrade head
+
+Jak uruchomić projekt?
+1. Skorzystać z konfiguracji startowej dla PyCharm znajdującej się w MeczownikBackend\.idea\runConfigurations
+LUB
+1. Po uruchomieniu venv/instalacji requirements.txt wpisać w terminalu 'python main.py'
+2. W obu przypadkach aplikacja będzie dostępna pod adresem 'https://127.0.0.1:8000'
+3. Api testowane było w programie insomnia, więc plik z requestami znajduje się w głównym folderze pliku
+4. Dostępne endpointy to:
+- /country, /country/{id}
+- /match, /match/{id}
+- /player, /player/{id}
+- /stadium, /stadium/{id}
+- /team, /team/{id}
+
